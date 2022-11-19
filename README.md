@@ -1,5 +1,5 @@
 
-## Estrutura de uma Aplicação MVC no Sprint
+## Estrutura de uma Aplicação RESTfull MVC com Spring Boot
 
 Tem 4 pacotes: Web Resuest --> @Controller --> @Service --> @Repository --> @Entity  
 
