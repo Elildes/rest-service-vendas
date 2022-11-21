@@ -4,6 +4,7 @@ package com.elildes.vendas.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -18,8 +19,13 @@ public class CompraService {
 		return "Item adicionado";
 	}
 	
-	public List<Item> getItens() {
-		return compras;
+	public Optional<Item> getItemById(Integer num) {
+		for (Item i : compras) {
+			if (i.getNum() == num) {
+				return Optional.of(i);
+			}
+		}
+		return Optional.empty();
 	}
 	
 //	public void removerItem(int index) {
