@@ -1,4 +1,4 @@
-// Aplicação MVC no Spring
+// Aplicação MVC no Spring com parâmetro
 
 package com.elildes.vendas.controller;
 
